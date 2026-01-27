@@ -1,7 +1,4 @@
--- ============================================================
--- Complex SQL Queries for Reporting & Analytics
--- Project: Ask-Now Survey App (CSE 4508)
--- ============================================================
+
 
 -- Q1: Multi-Table Join
 -- List all surveys with their creator details and total response counts
