@@ -188,10 +188,6 @@ GROUP BY st.id
 ORDER BY st.createdAt DESC;
 
 
--- ============================================================
--- SECTION 3: ANALYTICAL QUERIES (For Reporting)
--- ============================================================
-
 -- Q10: Survey Performance Overview
 -- Multi-table join with aggregations
 SELECT 
