@@ -1,5 +1,3 @@
-
-
 -- Q1: Multi-Table Join
 -- List all surveys with their creator details and total response counts
 SELECT s.title, u.name as creator_name, COUNT(sr.id) as response_count

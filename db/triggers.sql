@@ -13,3 +13,17 @@ CREATE TRIGGER tr_audit_survey_status
 AFTER UPDATE ON survey
 FOR EACH ROW
 EXECUTE FUNCTION tr_fn_audit_survey_status();
+
+
+CREATE OR REPLACE FUNCTION tr_fn_update_survey_timestamp()
+RETURNS TRIGGER AS $$
+BEGIN
+    NEW.updatedAt = CURRENT_TIMESTAMP;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER tr_update_survey_timestamp
+BEFORE UPDATE ON survey
+FOR EACH ROW
+EXECUTE FUNCTION tr_fn_update_survey_timestamp();
