@@ -1,6 +1,6 @@
 # Entity Relationship Diagram
 
-The following Mermaid diagram represents the logical schema of the **Ask-Now** Survey Application, expanded to 13 entities to meet the project's requirement for complexity (10–15 entities).
+The following Mermaid diagram represents the logical schema expanded to 13 entities to meet the project's requirement for complexity (10–15 entities).
 
 ```mermaid
 erDiagram
@@ -10,15 +10,15 @@ erDiagram
     USER ||--o{ SURVEY : creates
     USER ||--o{ SURVEY_RESPONSE : submits
     USER ||--o{ AUDIT_LOG : "triggers (Admin/Creator)"
-    
+
     SURVEY ||--o{ QUESTION : contains
     SURVEY ||--o{ SURVEY_RESPONSE : receives
     SURVEY ||--o{ SURVEY_TOKEN : "uses for access"
     SURVEY }o--|| CATEGORY : belongs_to
-    
+
     QUESTION ||--o{ QUESTION_OPTION : has
     QUESTION ||--o{ RESPONSE_ANSWER : "is answered by"
-    
+
     SURVEY_RESPONSE ||--o{ RESPONSE_ANSWER : consists_of
     SURVEY_TOKEN ||--o{ SURVEY_RESPONSE : validates
 
@@ -74,6 +74,7 @@ erDiagram
 ```
 
 ### Entities (13 Total):
+
 1.  **User**: System users (Creators and Respondents).
 2.  **Session**: Authentication sessions.
 3.  **Account**: OAuth and local account details.

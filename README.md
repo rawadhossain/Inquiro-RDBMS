@@ -231,19 +231,3 @@ bun run db:studio    # Open Prisma Studio
 ### AI Generation
 
 - `POST /api/ai/generate-survey` - Generate survey with AI
-
-## 🆘 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/your-username/fe-surveyer/issues) page
-2. Create a new issue with detailed information
-3. Join our community discussions
-
-## 🙏 Acknowledgments
-
-- [Next.js](https://nextjs.org/) for the amazing React framework
-- [shadcn/ui](https://ui.shadcn.com/) for beautiful UI components
-- [Prisma](https://prisma.io/) for excellent database tooling
-- [OpenAI](https://openai.com/) for AI capabilities
-- [Vercel](https://vercel.com/) for hosting and AI SDK
