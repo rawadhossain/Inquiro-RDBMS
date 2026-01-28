@@ -1,9 +1,4 @@
-/*
-  Warnings:
 
-  - You are about to drop the column `password` on the `user` table. All the data in the column will be lost.
-
-*/
 -- CreateEnum
 CREATE TYPE "SurveyStatus" AS ENUM ('DRAFT', 'PUBLISHED', 'CLOSED');
 
