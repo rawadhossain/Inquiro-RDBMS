@@ -1,3 +1,5 @@
+-- Q1: Get All Public Active Surveys
+-- Used in: surveyDAL.getAllPublicSurveys()
 SELECT 
     s.id,
     s.title,
